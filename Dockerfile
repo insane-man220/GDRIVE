@@ -12,8 +12,8 @@ RUN apt-get -qq update && \
     apt-get purge -y software-properties-common
 
 
-RUN wget https://raw.githubusercontent.com/your-username/repo-name/main/authorized_chats.txt
-RUN wget https://raw.githubusercontent.com/your-username/repo-name/main/token.pickle
+RUN wget https://raw.githubusercontent.com/insane-man220/GDRIVE/master/authorized_chats.txt
+RUN wget https://raw.githubusercontent.com/insane-man220/GDRIVE/master/token.pickle
 COPY requirements.txt .
 COPY extract /usr/local/bin
 RUN chmod +x /usr/local/bin/extract
